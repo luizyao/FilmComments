@@ -70,9 +70,9 @@ class FilmCommentsPipeline(object):
                 try:
                     self.cur.execute(sql)
                 except sqlite3.Error as ie:
-                    logging.error('An error occured:{}'.format(ie.args))
+                    logging.info(ie.args[0])
         except sqlite3.Error as e:
-            logging.error('An error occurred:{}'.format(e.args))
+            logging.info(e.args[0])
 
     def process_item(self, item, spider):
         try:
