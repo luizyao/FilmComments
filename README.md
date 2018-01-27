@@ -13,3 +13,4 @@
 
 # Comments
   1. Some dependencies are necessary, such as, scrapy, cv2 .etc
+  2. For example, you can see the [result.txt](film_comments/result.txt)
